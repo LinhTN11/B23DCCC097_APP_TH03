@@ -1,97 +1,133 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# B23DCCC097_APP_TH03
 
-# Getting Started
+> **Ứng dụng Hỗ trợ Quản lý Học tập Sinh viên (Giao diện chuẩn PTIT S-Link)**  
+> **Bài Thực Hành 03 (TH03)** - Học phần: Phát triển ứng dụng di động  
+> **Học viện Công nghệ Bưu chính Viễn thông (PTIT)**
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 📌 Thông tin sinh viên
+- **Mã sinh viên:** B23DCCC097
+- **Họ và tên:** Nguyễn Văn An (Demo Profile)
+- **Lớp:** D21CQCN01-B
+- **Khoa:** Công nghệ Thông tin 1
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+---
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## 🎯 Mục tiêu đồ án
+Xây dựng ứng dụng di động đa nền tảng bằng **React Native & TypeScript** hỗ trợ sinh viên quản lý toàn diện các hoạt động học tập, bao gồm: môn học, thời khóa biểu, bài tập và kết quả học tập tích lũy. Ứng dụng mô phỏng chính xác giao diện hệ sinh thái **PTIT S-Link** với phong cách thiết kế phẳng hiện đại, gam màu đỏ thương hiệu Học viện (`#BA1B1D`), bộ icon vector SVG đồng bộ và dữ liệu thực tế.
 
-```sh
-# Using npm
-npm start
+---
 
-# OR using Yarn
-yarn start
+## 📱 Các chức năng & Màn hình chính
+
+Ứng dụng kết hợp kiến trúc **Bottom Tab Navigation** (5 tab chính) và **Native Stack Navigation** (chuyển hướng chi tiết):
+
+### 1. Màn hình Trang chủ (Tổng quan - `HomeScreen`)
+- **Header sinh viên:** Hiển thị họ tên, MSSV, lớp, khoa, ảnh đại diện và thông báo.
+- **Thẻ sinh viên số PTIT (Digital Student ID):**
+  - Tích hợp ảnh chân dung, mã vạch Barcode, mã QR ra vào cổng trường/thư viện/phòng thi.
+  - Tích xanh trạng thái *"Đang theo học chính khóa"* chuẩn xác thực.
+- **Tiện ích S-Link (8 dịch vụ Học viện):**
+  - Lịch học, Lịch thi học phần, Bảng điểm, Điểm rèn luyện, Tra cứu học phí, Khảo sát giảng viên, Bộ phận một cửa SV, Đăng ký học phần.
+  - Hỗ trợ modal chi tiết có xử lý Safe Area đệm tránh tai thỏ/camera đục lỗ.
+- **Tổng quan tiến độ:** GPA tích lũy, số tín chỉ đạt, bài tập chờ, môn học kỳ này và bài tập sắp tới hạn.
+
+### 2. Màn hình Môn học (`SubjectListScreen` & `SubjectDetailScreen`)
+- Danh sách môn học hiển thị bằng `FlatList` tối ưu hiệu năng: mã môn, tên môn, số tín chỉ, giảng viên phụ trách, phòng học.
+- Thanh tìm kiếm môn học realtime theo tên hoặc mã môn.
+- Màn hình chi tiết môn học (`SubjectDetailScreen`):
+  - Thông tin giảng dạy, email giảng viên, phòng học, lịch học trong tuần.
+  - Tỷ lệ đánh giá học phần: Điểm chuyên cần (10%), Giữa kỳ (30%), Thi kết thúc (60%).
+  - Đề cương tóm tắt môn học và danh sách bài tập riêng theo môn.
+
+### 3. Màn hình Thời khóa biểu (`ScheduleScreen`)
+- Hiển thị lịch học trong tuần với thanh chọn ngày nhanh (Thứ 2 đến Chủ nhật).
+- Danh sách ca học trực quan: Tên môn, thời gian bắt đầu - kết thúc, phòng học, giảng viên.
+- Phân loại hình thức học (Lý thuyết / Thực hành) và trạng thái buổi học (Đang diễn ra / Sắp tới / Đã xong).
+
+### 4. Màn hình Bài tập (`AssignmentScreen`)
+- Thống kê tiến độ hoàn thành bài tập và thanh tiến độ trực quan.
+- Bộ lọc danh mục bài tập: Tất cả, Chưa nộp, Đã nộp, Gấp (sắp tới hạn).
+- Cho phép sinh viên tương tác đánh dấu hoàn thành bài tập (toggle checkbox) cập nhật realtime.
+- Cảnh báo thời hạn nộp bài (Badge đỏ cho bài tập gấp, hiển thị thời gian còn lại).
+
+### 5. Màn hình Kết quả học tập & Bảng điểm (`GradeDetailScreen` & `ProfileScreen`)
+- Thẻ điểm tổng hợp toàn khóa chuẩn PTIT:
+  - GPA hệ 4, GPA thang điểm 10, Tổng tín chỉ đạt / yêu cầu, Điểm rèn luyện.
+  - Huy hiệu xếp loại học lực (Giỏi, Xuất sắc) và huy hiệu *"Chính thức"*.
+- Tra cứu bảng điểm chi tiết theo từng học kỳ:
+  - Điểm chuyên cần (CC), Giữa kỳ (GK), Cuối kỳ (CK).
+  - Điểm tổng kết thang 10, thang 4 và điểm chữ (A+, A, B+, B...).
+  - Tỷ lệ đạt môn học kỳ và tóm tắt tiến độ chương trình đào tạo.
+
+---
+
+## 🛠️ Công nghệ & Kỹ thuật sử dụng
+- **Core:** React Native `0.87.1`
+- **Language:** TypeScript
+- **Navigation:** `@react-navigation/native`, `@react-navigation/bottom-tabs`, `@react-navigation/native-stack`
+- **Safe Area & Screens:** `react-native-safe-area-context`, `react-native-screens`
+- **Graphics & Icons:** `react-native-svg` (Bộ icon vector chuẩn S-Link tối ưu hiệu năng)
+- **State Management:** React Context API (`AppContext` quản lý dữ liệu sinh viên, môn học, lịch học, bài tập xuyên suốt)
+- **Unit Testing:** Jest & React Native Testing Library (`PASS __tests__/App.test.tsx`)
+
+---
+
+## 📂 Cấu trúc thư mục mã nguồn
+
+```
+THApp/
+├── src/
+│   ├── components/       # Header, Badge, AppIcons (bộ icon vector SVG)
+│   ├── constants/        # Theme màu sắc chuẩn PTIT (#BA1B1D, #D32F2F)
+│   ├── context/          # AppContext (Quản lý trạng thái học tập tập trung)
+│   ├── data/             # Mock data chuẩn dữ liệu thực tế sinh viên PTIT
+│   ├── navigation/       # RootStack và BottomTabNavigator
+│   ├── screens/          # 6 màn hình chức năng chính
+│   │   ├── HomeScreen.tsx
+│   │   ├── SubjectListScreen.tsx
+│   │   ├── SubjectDetailScreen.tsx
+│   │   ├── ScheduleScreen.tsx
+│   │   ├── AssignmentScreen.tsx
+│   │   ├── GradeDetailScreen.tsx
+│   │   └── ProfileScreen.tsx
+│   └── types/            # TypeScript interfaces & types
+├── __tests__/            # Bộ kiểm thử Unit Test
+├── android/              # Mã nguồn native Android
+├── ios/                  # Mã nguồn native iOS
+├── package.json
+├── tsconfig.json
+└── README.md
 ```
 
-## Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## 🚀 Hướng dẫn cài đặt và khởi chạy
 
-### Android
+### Yêu cầu môi trường
+- Node.js >= 18.x
+- npm hoặc yarn
+- Android Studio & Android SDK (API 34/35)
 
-```sh
-# Using npm
-npm run android
+### Các bước khởi chạy
 
-# OR using Yarn
-yarn android
-```
+1. **Cài đặt các gói phụ thuộc:**
+   ```bash
+   npm install
+   ```
 
-### iOS
+2. **Khởi chạy ứng dụng trên thiết bị Android / Giả lập:**
+   ```bash
+   npm run android
+   ```
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+3. **Khởi động Metro Bundler (nếu cần):**
+   ```bash
+   npm start
+   ```
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+4. **Chạy kiểm thử tự động (Unit Test):**
+   ```bash
+   npm test
+   ```
