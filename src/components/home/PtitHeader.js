@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import colors from '../../theme/colors';
 import spacing from '../../theme/spacing';
 import typography from '../../theme/typography';
@@ -43,7 +43,7 @@ function PtitHeader({
         <View style={styles.brandBadge}>
           <View style={styles.brandDot} />
           <Text style={styles.brandText}>
-            PTIT S-LINK • CỔNG THÔNG TIN SINH VIÊN
+            P CALENDER • PTIT S-LINK
           </Text>
         </View>
 
@@ -92,7 +92,19 @@ function PtitHeader({
             pressed ? styles.pressed : null,
           ]}>
           <View style={styles.avatarCircle}>
-            <Text style={styles.avatarInitial}>{initial.toUpperCase()}</Text>
+            {student && student.avatarUrl ? (
+              <Image
+                source={{ uri: student.avatarUrl }}
+                style={styles.avatarImage}
+                resizeMode="cover"
+              />
+            ) : (
+              <Image
+                source={require('../../assets/ptit_logo.png')}
+                style={styles.avatarImage}
+                resizeMode="cover"
+              />
+            )}
           </View>
           <View
             style={[
@@ -271,6 +283,12 @@ const styles = StyleSheet.create({
     borderColor: colors.accentLight,
     alignItems: 'center',
     justifyContent: 'center',
+    overflow: 'hidden',
+  },
+  avatarImage: {
+    width: '100%',
+    height: '100%',
+    borderRadius: 26,
   },
   avatarInitial: {
     color: colors.primary,

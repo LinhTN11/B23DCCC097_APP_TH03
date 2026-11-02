@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Image,
   Modal,
   Pressable,
   ScrollView,
@@ -84,9 +85,19 @@ function StudentCardModal({ visible, student, onClose }) {
             <View style={styles.idCardBody}>
               <View style={styles.photoColumn}>
                 <View style={styles.photoFrame}>
-                  <Text style={styles.photoInitial}>
-                    {initial.toUpperCase()}
-                  </Text>
+                  {student && student.avatarUrl ? (
+                    <Image
+                      source={{ uri: student.avatarUrl }}
+                      style={styles.photoImage}
+                      resizeMode="cover"
+                    />
+                  ) : (
+                    <Image
+                      source={require('../../assets/ptit_logo.png')}
+                      style={styles.photoImage}
+                      resizeMode="cover"
+                    />
+                  )}
                 </View>
                 <View style={styles.qrFrame}>
                   <Icon name="qr" color={colors.primaryDark} size={46} />
@@ -268,6 +279,12 @@ const styles = StyleSheet.create({
     borderColor: colors.primary,
     alignItems: 'center',
     justifyContent: 'center',
+    overflow: 'hidden',
+  },
+  photoImage: {
+    width: '100%',
+    height: '100%',
+    borderRadius: spacing.radiusMd,
   },
   photoInitial: {
     color: colors.primary,

@@ -1,5 +1,5 @@
 import React, { useCallback, useMemo } from 'react';
-import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
+import { FlatList, Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useAppData } from '../../context/AppDataContext';
 import { useSync } from '../../context/SyncContext';
 import { calcGpa } from '../../utils/gpa';
@@ -122,7 +122,19 @@ export default function ProfileScreen({ navigation }) {
         <View style={styles.studentCardBody}>
           <View style={styles.avatarContainer}>
             <View style={styles.avatarCircle}>
-              <Text style={styles.avatarText}>{avatarInitial}</Text>
+              {student && student.avatarUrl ? (
+                <Image
+                  source={{ uri: student.avatarUrl }}
+                  style={styles.avatarImage}
+                  resizeMode="cover"
+                />
+              ) : (
+                <Image
+                  source={require('../../assets/ptit_logo.png')}
+                  style={styles.avatarImage}
+                  resizeMode="cover"
+                />
+              )}
             </View>
             <View style={styles.verifiedDot}>
               <Icon name="check" color={colors.white} size={11} />
@@ -415,6 +427,12 @@ const styles = StyleSheet.create({
     borderColor: colors.accent,
     alignItems: 'center',
     justifyContent: 'center',
+    overflow: 'hidden',
+  },
+  avatarImage: {
+    width: '100%',
+    height: '100%',
+    borderRadius: (spacing.huge + spacing.xxl) / 2,
   },
   avatarText: {
     fontSize: typography.sizes.display,
