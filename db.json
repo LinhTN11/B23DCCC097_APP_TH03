@@ -1,0 +1,957 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "studentCode": "SV2021001",
+      "fullName": "Nguyễn Văn An",
+      "className": "CNTT-K21A",
+      "major": "Công nghệ thông tin",
+      "email": "an.nv@stu.ptit.edu.vn",
+      "phone": "0912345678",
+      "faculty": "Khoa Công nghệ thông tin 1",
+      "academicYear": "2021 - 2026",
+      "trainingSystem": "Đại học chính quy",
+      "status": "Đang theo học chính khóa",
+      "advisor": "TS. Trần Minh",
+      "dateOfBirth": "15/08/2003",
+      "hometown": "Hà Nội",
+      "avatarUrl": "https://ptit.edu.vn/wp-content/uploads/2024/05/circle-ptit-2.png",
+      "updatedAt": "2026-11-02T07:36:01.454Z"
+    },
+    {
+      "id": 2,
+      "studentCode": "SV2021002",
+      "fullName": "Trần Thị Bình",
+      "className": "CNTT-K21A",
+      "major": "Công nghệ thông tin",
+      "email": "binh.tt@student.edu.vn",
+      "phone": "0912345679",
+      "faculty": "Khoa Công nghệ thông tin 1",
+      "academicYear": "2021 - 2026",
+      "trainingSystem": "Đại học chính quy",
+      "status": "Đang theo học chính khóa",
+      "advisor": "TS. Trần Minh",
+      "dateOfBirth": "22/04/2003",
+      "hometown": "Nam Định",
+      "updatedAt": "2026-10-20T08:05:00Z"
+    },
+    {
+      "id": 3,
+      "studentCode": "SV2021003",
+      "fullName": "Lê Minh Cường",
+      "className": "CNTT-K21B",
+      "major": "Kỹ thuật phần mềm",
+      "email": "cuong.lm@student.edu.vn",
+      "phone": "0912345680",
+      "faculty": "Khoa Công nghệ thông tin 1",
+      "academicYear": "2021 - 2026",
+      "trainingSystem": "Đại học chính quy",
+      "status": "Đang theo học chính khóa",
+      "advisor": "TS. Lê Quang",
+      "dateOfBirth": "10/11/2003",
+      "hometown": "Thanh Hóa",
+      "updatedAt": "2026-10-20T08:10:00Z"
+    },
+    {
+      "id": 4,
+      "studentCode": "SV2021004",
+      "fullName": "Phạm Thu Dung",
+      "className": "ATTT-K21A",
+      "major": "An toàn thông tin",
+      "email": "dung.pt@student.edu.vn",
+      "phone": "0912345681",
+      "faculty": "Khoa An toàn thông tin",
+      "academicYear": "2021 - 2026",
+      "trainingSystem": "Đại học chính quy",
+      "status": "Đang theo học chính khóa",
+      "advisor": "TS. Vũ Hạnh",
+      "dateOfBirth": "05/09/2003",
+      "hometown": "Hải Phòng",
+      "updatedAt": "2026-10-20T08:15:00Z"
+    },
+    {
+      "id": 5,
+      "studentCode": "SV2021005",
+      "fullName": "Hoàng Đức Em",
+      "className": "CNTT-K21B",
+      "major": "Hệ thống thông tin",
+      "email": "em.hd@student.edu.vn",
+      "phone": "0912345682",
+      "faculty": "Khoa Công nghệ thông tin 1",
+      "academicYear": "2021 - 2026",
+      "trainingSystem": "Đại học chính quy",
+      "status": "Đang theo học chính khóa",
+      "advisor": "ThS. Nguyễn Hà",
+      "dateOfBirth": "19/12/2003",
+      "hometown": "Nghệ An",
+      "updatedAt": "2026-10-20T08:20:00Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "code": "INT3120",
+      "name": "Phát triển ứng dụng di động",
+      "credits": 3,
+      "lecturer": "TS. Trần Minh",
+      "lecturerEmail": "minht@ptit.edu.vn",
+      "description": "Xây dựng ứng dụng di động đa nền tảng, làm việc với REST API, lưu trữ cục bộ và xử lý trạng thái mạng.",
+      "semester": "HK1 2026-2027",
+      "room": "P.301-A2",
+      "building": "Tòa A2 - Cơ sở Hà Đông",
+      "scheduleSummary": "Thứ 2 (07:00 - 09:30), Thứ 6 (13:00 - 15:30) • P.301-A2",
+      "progress": 0.75,
+      "color": "#B42318",
+      "syllabus": [
+        "Chương 1: Kiến trúc React Native, JSX và Component nền tảng",
+        "Chương 2: Thiết kế bố cục Flexbox & Hệ thống StyleSheet chuẩn",
+        "Chương 3: Điều hướng đa tầng với React Navigation (Tab & Stack)",
+        "Chương 4: Tích hợp REST API (fetch), xử lý 4 trạng thái UI",
+        "Chương 5: Lưu trữ cục bộ AsyncStorage, Cache TTL & Outbox đồng bộ"
+      ]
+    },
+    {
+      "id": 2,
+      "code": "INT3209",
+      "name": "Cơ sở dữ liệu",
+      "credits": 3,
+      "lecturer": "ThS. Nguyễn Hà",
+      "lecturerEmail": "han@ptit.edu.vn",
+      "description": "Thiết kế, chuẩn hóa cơ sở dữ liệu quan hệ và tối ưu truy vấn SQL.",
+      "semester": "HK1 2026-2027",
+      "room": "P.205-A1",
+      "building": "Tòa A1 - Cơ sở Hà Đông",
+      "scheduleSummary": "Thứ 2 (09:45 - 12:15), Thứ 7 (07:00 - 09:30) • P.205-A1",
+      "progress": 0.7,
+      "color": "#1570EF",
+      "syllabus": [
+        "Chương 1: Mô hình thực thể liên kết (ERD) & Mô hình quan hệ",
+        "Chương 2: Đại số quan hệ và Ngôn ngữ truy vấn SQL chuyên sâu",
+        "Chương 3: Phụ thuộc hàm & Chuẩn hóa lược đồ (1NF, 2NF, 3NF, BCNF)",
+        "Chương 4: Giao dịch (Transaction), Khóa và Tối ưu hóa chỉ mục"
+      ]
+    },
+    {
+      "id": 3,
+      "code": "INT3306",
+      "name": "Lập trình web",
+      "credits": 3,
+      "lecturer": "TS. Lê Quang",
+      "lecturerEmail": "quangl@ptit.edu.vn",
+      "description": "Phát triển ứng dụng web hiện đại với kiến trúc client - server và các chuẩn giao tiếp REST.",
+      "semester": "HK1 2026-2027",
+      "room": "P.402-B1",
+      "building": "Tòa B1 - Cơ sở Hà Đông",
+      "scheduleSummary": "Thứ 3 (07:00 - 09:30) • P.402-B1",
+      "progress": 0.8,
+      "color": "#0E9384",
+      "syllabus": [
+        "Chương 1: Giao thức HTTP/HTTPS, HTML5 Semantic & CSS Grid/Flex",
+        "Chương 2: JavaScript ES6+, Bất đồng bộ (Promise, Async/Await)",
+        "Chương 3: Phát triển Single Page Application (SPA) với React",
+        "Chương 4: Thiết kế RESTful API, Xác thực JWT & Phân quyền RBAC",
+        "Chương 5: Bảo mật ứng dụng Web (XSS, CSRF) & Triển khai CI/CD"
+      ]
+    },
+    {
+      "id": 4,
+      "code": "INT3401",
+      "name": "Trí tuệ nhân tạo",
+      "credits": 3,
+      "lecturer": "TS. Vũ Hạnh",
+      "lecturerEmail": "hanhv@ptit.edu.vn",
+      "description": "Các thuật toán tìm kiếm, học máy cơ bản và ứng dụng trí tuệ nhân tạo.",
+      "semester": "HK1 2026-2027",
+      "room": "P.301-A2",
+      "building": "Tòa A2 - Cơ sở Hà Đông",
+      "scheduleSummary": "Thứ 4 (13:00 - 15:30) • P.301-A2",
+      "progress": 0.68,
+      "color": "#7F56D9",
+      "syllabus": [
+        "Chương 1: Không gian trạng thái & Tìm kiếm mù (BFS, DFS, UCS)",
+        "Chương 2: Tìm kiếm có thông tin Heuristic (Greedy, A*, IDA*)",
+        "Chương 3: Tìm kiếm đối kháng trong trò chơi (Minimax, Alpha-Beta)",
+        "Chương 4: Biểu diễn tri thức, Suy diễn Logic & Học máy cơ bản"
+      ]
+    },
+    {
+      "id": 5,
+      "code": "INT3105",
+      "name": "Kiến trúc máy tính",
+      "credits": 3,
+      "lecturer": "ThS. Đặng Hùng",
+      "lecturerEmail": "hungd@ptit.edu.vn",
+      "description": "Tổ chức máy tính, tập lệnh, pipeline và đánh giá hiệu năng hệ thống.",
+      "semester": "HK1 2026-2027",
+      "room": "P.105-B2",
+      "building": "Tòa B2 - Cơ sở Hà Đông",
+      "scheduleSummary": "Thứ 5 (07:00 - 09:30) • P.105-B2",
+      "progress": 0.85,
+      "color": "#F79009",
+      "syllabus": [
+        "Chương 1: Biểu diễn dữ liệu số học và Đại số Boole trong máy tính",
+        "Chương 2: Kiến trúc tập lệnh (ISA - MIPS/RISC-V) và Hợp ngữ",
+        "Chương 3: Tổ chức bộ xử lý trung tâm CPU và kỹ thuật Pipeline 5 tầng",
+        "Chương 4: Phân cấp bộ nhớ (Cache L1/L2/L3, RAM, Bộ nhớ ảo)"
+      ]
+    },
+    {
+      "id": 6,
+      "code": "INT3010",
+      "name": "Toán rời rạc",
+      "credits": 2,
+      "lecturer": "TS. Mai Lan",
+      "lecturerEmail": "lanm@ptit.edu.vn",
+      "description": "Logic, tập hợp, quan hệ, đồ thị và các cấu trúc rời rạc nền tảng.",
+      "semester": "HK1 2026-2027",
+      "room": "P.203-A1",
+      "building": "Tòa A1 - Cơ sở Hà Đông",
+      "scheduleSummary": "Thứ 5 (09:45 - 11:30) • P.203-A1",
+      "progress": 0.65,
+      "color": "#12B76A",
+      "syllabus": [
+        "Chương 1: Cơ sở Logic mệnh đề, Tập hợp và Ánh xạ",
+        "Chương 2: Bài toán đếm, Nguyên lý Dirichlet và Hệ thức truy hồi",
+        "Chương 3: Lý thuyết đồ thị, Chu trình Euler & Hamilton",
+        "Chương 4: Cây khung nhỏ nhất (Kruskal, Prim) và Đường đi ngắn nhất (Dijkstra)"
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "id": 1,
+      "courseId": 1,
+      "dayOfWeek": 2,
+      "startTime": "07:00",
+      "endTime": "09:30",
+      "room": "P.301-A2",
+      "building": "Tòa A2",
+      "type": "Thực hành",
+      "lessonTopic": "Kết nối REST API với json-server và quản lý trạng thái mạng",
+      "classCode": "INT3120-01",
+      "note": "Mang laptop để thực hành React Native"
+    },
+    {
+      "id": 2,
+      "courseId": 2,
+      "dayOfWeek": 2,
+      "startTime": "09:45",
+      "endTime": "12:15",
+      "room": "P.205-A1",
+      "building": "Tòa A1",
+      "type": "Lý thuyết",
+      "lessonTopic": "Phụ thuộc hàm và chuẩn hóa lược đồ quan hệ 3NF / BCNF",
+      "classCode": "INT3209-02",
+      "note": "Bài tập nhóm về chuẩn hóa CSDL"
+    },
+    {
+      "id": 3,
+      "courseId": 3,
+      "dayOfWeek": 3,
+      "startTime": "07:00",
+      "endTime": "09:30",
+      "room": "P.402-B1",
+      "building": "Tòa B1",
+      "type": "Thực hành",
+      "lessonTopic": "Xây dựng RESTful API và xác thực người dùng JWT",
+      "classCode": "INT3306-01",
+      "note": "Thực hành REST API"
+    },
+    {
+      "id": 4,
+      "courseId": 4,
+      "dayOfWeek": 4,
+      "startTime": "13:00",
+      "endTime": "15:30",
+      "room": "P.301-A2",
+      "building": "Tòa A2",
+      "type": "Lý thuyết",
+      "lessonTopic": "Giải thuật tìm kiếm A* và hàm đánh giá Heuristic",
+      "classCode": "INT3401-01",
+      "note": "Seminar thuật toán tìm kiếm"
+    },
+    {
+      "id": 5,
+      "courseId": 5,
+      "dayOfWeek": 5,
+      "startTime": "07:00",
+      "endTime": "09:30",
+      "room": "P.105-B2",
+      "building": "Tòa B2",
+      "type": "Lý thuyết",
+      "lessonTopic": "Kiến trúc Pipeline 5 tầng và xử lý xung đột Hazard",
+      "classCode": "INT3105-03",
+      "note": "Kiểm tra giữa kỳ"
+    },
+    {
+      "id": 6,
+      "courseId": 6,
+      "dayOfWeek": 5,
+      "startTime": "09:45",
+      "endTime": "11:30",
+      "room": "P.203-A1",
+      "building": "Tòa A1",
+      "type": "Lý thuyết",
+      "lessonTopic": "Thuật toán tìm đường đi ngắn nhất Dijkstra và Bellman-Ford",
+      "classCode": "INT3010-02",
+      "note": ""
+    },
+    {
+      "id": 7,
+      "courseId": 1,
+      "dayOfWeek": 6,
+      "startTime": "13:00",
+      "endTime": "15:30",
+      "room": "P.301-A2",
+      "building": "Tòa A2",
+      "type": "Thực hành",
+      "lessonTopic": "Lưu trữ cục bộ với AsyncStorage, Cache TTL và Outbox đồng bộ",
+      "classCode": "INT3120-01",
+      "note": "Buổi thực hành dự án"
+    },
+    {
+      "id": 8,
+      "courseId": 2,
+      "dayOfWeek": 7,
+      "startTime": "07:00",
+      "endTime": "09:30",
+      "room": "P.205-A1",
+      "building": "Tòa A3",
+      "type": "Thực hành",
+      "lessonTopic": "Thực hành tối ưu hóa truy vấn SQL và thiết lập Index",
+      "classCode": "INT3209-02",
+      "note": "Lớp bù"
+    }
+  ],
+  "assignments": [
+    {
+      "id": 1,
+      "courseId": 1,
+      "title": "Xây dựng màn hình đăng nhập",
+      "description": "Hoàn thiện giao diện đăng nhập, kiểm tra dữ liệu đầu vào và hiển thị lỗi thân thiện.",
+      "dueDate": "2026-11-03T06:00:00Z",
+      "status": "todo",
+      "priority": "high",
+      "submissionFormat": "Nộp file PDF/ZIP qua hệ thống S-Link",
+      "weight": "10% điểm quá trình",
+      "updatedAt": "2026-10-28T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "courseId": 1,
+      "title": "Tích hợp API danh sách môn học",
+      "description": "Kết nối json-server, hiển thị danh sách môn học và xử lý bốn trạng thái tải dữ liệu.",
+      "dueDate": "2026-11-03T08:00:00Z",
+      "status": "todo",
+      "priority": "high",
+      "submissionFormat": "Nộp file PDF/ZIP qua hệ thống S-Link",
+      "weight": "15% điểm thực hành",
+      "updatedAt": "2026-11-02T08:55:50.118Z"
+    },
+    {
+      "id": 3,
+      "courseId": 2,
+      "title": "Bài tập chuẩn hóa cơ sở dữ liệu",
+      "description": "Chuẩn hóa lược đồ quan hệ đến dạng 3NF và mô tả khóa chính, khóa ngoại.",
+      "dueDate": "2026-11-12T23:59:00Z",
+      "status": "done",
+      "priority": "normal",
+      "submissionFormat": "Nộp file PDF/ZIP qua hệ thống S-Link",
+      "weight": "10% điểm quá trình",
+      "updatedAt": "2026-11-02T08:54:52.724Z"
+    },
+    {
+      "id": 4,
+      "courseId": 3,
+      "title": "Thiết kế trang quản trị",
+      "description": "Thiết kế trang quản trị người dùng, có phân trang và tìm kiếm.",
+      "dueDate": "2026-10-30T23:59:00Z",
+      "status": "done",
+      "priority": "high",
+      "submissionFormat": "Nộp file PDF/ZIP qua hệ thống S-Link",
+      "weight": "20% điểm bài tập lớn",
+      "updatedAt": "2026-11-02T09:26:04.053Z"
+    },
+    {
+      "id": 5,
+      "courseId": 4,
+      "title": "Báo cáo thuật toán tìm kiếm",
+      "description": "So sánh BFS, DFS và A* trên cùng một bài toán.",
+      "dueDate": "2026-10-25T23:59:00Z",
+      "status": "done",
+      "priority": "normal",
+      "submissionFormat": "Nộp file PDF/ZIP qua hệ thống S-Link",
+      "weight": "10% điểm quá trình",
+      "updatedAt": "2026-10-24T16:20:00Z"
+    },
+    {
+      "id": 6,
+      "courseId": 5,
+      "title": "Bài tập kiến trúc pipeline",
+      "description": "Phân tích ưu nhược điểm của pipeline 5 tầng và tính toán hiệu năng.",
+      "dueDate": "2026-11-16T23:59:00Z",
+      "status": "done",
+      "priority": "normal",
+      "submissionFormat": "Nộp file PDF/ZIP qua hệ thống S-Link",
+      "weight": "10% điểm quá trình",
+      "updatedAt": "2026-10-27T11:00:00Z"
+    }
+  ],
+  "grades": [
+    {
+      "id": 1,
+      "courseId": 1,
+      "semester": "HK1 2026-2027",
+      "credits": 3,
+      "attendance": 9,
+      "midterm": 7.5,
+      "final": 8.5,
+      "total": 8.25,
+      "letter": "B+",
+      "note": "Hoàn thành tốt dự án thực hành React Native CLI"
+    },
+    {
+      "id": 2,
+      "courseId": 2,
+      "semester": "HK1 2026-2027",
+      "credits": 3,
+      "attendance": 8,
+      "midterm": 7,
+      "final": 8,
+      "total": 7.7,
+      "letter": "B",
+      "note": "Nắm vững thiết kế ERD và chuẩn hóa 3NF"
+    },
+    {
+      "id": 3,
+      "courseId": 3,
+      "semester": "HK1 2026-2027",
+      "credits": 3,
+      "attendance": 9,
+      "midterm": 8,
+      "final": 9,
+      "total": 8.7,
+      "letter": "A",
+      "note": "Đạt điểm xuất sắc bài tập lớn RESTful Web"
+    },
+    {
+      "id": 4,
+      "courseId": 4,
+      "semester": "HK2 2025-2026",
+      "credits": 3,
+      "attendance": 7,
+      "midterm": 6,
+      "final": 6.5,
+      "total": 6.4,
+      "letter": "C",
+      "note": "Đạt yêu cầu môn học"
+    },
+    {
+      "id": 5,
+      "courseId": 5,
+      "semester": "HK2 2025-2026",
+      "credits": 3,
+      "attendance": 10,
+      "midterm": 9,
+      "final": 9.5,
+      "total": 9.4,
+      "letter": "A",
+      "note": "Điểm cao nhất lớp học phần Kiến trúc máy tính"
+    },
+    {
+      "id": 6,
+      "courseId": 6,
+      "semester": "HK2 2025-2026",
+      "credits": 2,
+      "attendance": 6,
+      "midterm": 5,
+      "final": 4.5,
+      "total": 4.8,
+      "letter": "D",
+      "note": "Cần ôn tập thêm phần Lý thuyết đồ thị"
+    }
+  ],
+  "announcements": [
+    {
+      "id": 1,
+      "title": "Kế hoạch đăng ký học phần bổ sung Học kỳ 1 năm học 2026 - 2027",
+      "category": "Đào tạo",
+      "sender": "Phòng Giáo vụ",
+      "date": "2026-11-01",
+      "summary": "Sinh viên các khóa thực hiện rà soát và điều chỉnh đăng ký học phần trên cổng thông tin qldt.ptit.edu.vn.",
+      "content": "Phòng Giáo vụ thông báo tới toàn thể sinh viên hệ Đại học chính quy kế hoạch rà soát học phần Học kỳ 1 năm học 2026 - 2027. Sinh viên kiểm tra kỹ thời khóa biểu, phòng học và danh sách lớp tín chỉ trên ứng dụng PTIT S-Link.",
+      "important": true
+    },
+    {
+      "id": 2,
+      "title": "Thông báo xét cấp học bổng Khuyến khích học tập Học kỳ 1",
+      "category": "Công tác SV",
+      "sender": "Phòng Công tác sinh viên",
+      "date": "2026-10-28",
+      "summary": "Công bố tiêu chuẩn xét học bổng loại Xuất sắc (GPA >= 3.60) và loại Giỏi (GPA >= 3.20) kèm điểm rèn luyện >= 80.",
+      "content": "Căn cứ kết quả học tập và rèn luyện của sinh viên, Hội đồng xét cấp học bổng Học viện thông báo tiêu chuẩn xét học bổng KKHT. Sinh viên kiểm tra điểm tích lũy và điểm rèn luyện trước ngày 10/11/2026.",
+      "important": true
+    },
+    {
+      "id": 3,
+      "title": "Lịch thi kết thúc học phần dự kiến Học kỳ 1 năm học 2026 - 2027",
+      "category": "Khảo thí",
+      "sender": "Phòng Khảo thí & ĐBCLGD",
+      "date": "2026-10-25",
+      "summary": "Sinh viên tra cứu lịch thi, phòng thi và số báo danh trong mục Lịch thi học kỳ trên S-Link.",
+      "content": "Phòng Khảo thí & Đảm bảo chất lượng giáo dục đã cập nhật lịch thi kết thúc học phần HK1 2026-2027. Sinh viên mang theo thẻ sinh viên điện tử trên S-Link hoặc CCCD khi vào phòng thi.",
+      "important": false
+    },
+    {
+      "id": 4,
+      "title": "Hướng dẫn thanh toán học phí trực tuyến qua VNPAY-QR và Viettel Money",
+      "category": "Tài chính",
+      "sender": "Phòng Tài chính - Kế toán",
+      "date": "2026-10-20",
+      "summary": "Hoàn thành nghĩa vụ học phí đúng hạn để đảm bảo điều kiện dự thi kết thúc học phần.",
+      "content": "Sinh viên có thể tra cứu công nợ và thanh toán học phí trực tiếp bằng mã QR định danh trên PTIT S-Link. Hệ thống tự động gạch nợ tức thời sau khi giao dịch thành công.",
+      "important": false
+    },
+    {
+      "id": 5,
+      "title": "Phát động Cuộc thi Sinh viên Nghiên cứu Khoa học & Khởi nghiệp PTIT 2026",
+      "category": "Nghiên cứu KH",
+      "sender": "Đoàn Thanh niên & Viện KHCN",
+      "date": "2026-10-15",
+      "summary": "Đăng ký đề tài nghiên cứu ứng dụng AI, IoT, Mobile App và An toàn thông tin cấp Học viện.",
+      "content": "Các nhóm sinh viên từ 2-5 thành viên gửi đề cương nghiên cứu qua cổng S-Link trước ngày 20/11/2026. Các đề tài xuất sắc được hỗ trợ kinh phí và cộng điểm rèn luyện mục Học thuật.",
+      "important": false
+    }
+  ],
+  "exams": [
+    {
+      "id": 1,
+      "courseCode": "INT3120",
+      "courseName": "Phát triển ứng dụng di động",
+      "date": "2026-12-22",
+      "startTime": "09:30",
+      "duration": "90 phút",
+      "room": "P.301-A2",
+      "format": "Thực hành & Vấn đáp dự án",
+      "seatNumber": "SBD 014",
+      "semester": "HK1 2026-2027"
+    },
+    {
+      "id": 2,
+      "courseCode": "INT3209",
+      "courseName": "Cơ sở dữ liệu",
+      "date": "2026-12-25",
+      "startTime": "07:30",
+      "duration": "90 phút",
+      "room": "P.205-A1",
+      "format": "Tự luận viết",
+      "seatNumber": "SBD 014",
+      "semester": "HK1 2026-2027"
+    },
+    {
+      "id": 3,
+      "courseCode": "INT3306",
+      "courseName": "Lập trình web",
+      "date": "2026-12-28",
+      "startTime": "13:30",
+      "duration": "90 phút",
+      "room": "Lab 402-B1",
+      "format": "Thực hành phòng máy",
+      "seatNumber": "SBD 014",
+      "semester": "HK1 2026-2027"
+    },
+    {
+      "id": 4,
+      "courseCode": "INT3401",
+      "courseName": "Trí tuệ nhân tạo",
+      "date": "2027-01-03",
+      "startTime": "09:30",
+      "duration": "60 phút",
+      "room": "P.301-A2",
+      "format": "Trắc nghiệm trên máy",
+      "seatNumber": "SBD 014",
+      "semester": "HK1 2026-2027"
+    },
+    {
+      "id": 5,
+      "courseCode": "INT3105",
+      "courseName": "Kiến trúc máy tính",
+      "date": "2027-01-06",
+      "startTime": "07:30",
+      "duration": "90 phút",
+      "room": "P.105-B2",
+      "format": "Tự luận & Bài tập lớn",
+      "seatNumber": "SBD 014",
+      "semester": "HK1 2026-2027"
+    }
+  ],
+  "trainingScores": [
+    {
+      "id": 1,
+      "semester": "HK1 2026-2027",
+      "totalScore": 91,
+      "rank": "Xuất sắc",
+      "status": "Hội đồng Khoa đã duyệt",
+      "criteria": [
+        {
+          "name": "Ý thức và kết quả học tập, nghiên cứu khoa học",
+          "maxScore": 20,
+          "score": 19
+        },
+        {
+          "name": "Ý thức chấp hành nội quy, quy chế của Học viện",
+          "maxScore": 25,
+          "score": 24
+        },
+        {
+          "name": "Tham gia hoạt động chính trị, xã hội, văn hóa, thể thao",
+          "maxScore": 20,
+          "score": 18
+        },
+        {
+          "name": "Ý thức công dân và quan hệ cộng đồng",
+          "maxScore": 25,
+          "score": 22
+        },
+        {
+          "name": "Tham gia công tác cán bộ lớp, Đoàn - Hội và thành tích đặc biệt",
+          "maxScore": 10,
+          "score": 8
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "semester": "HK2 2025-2026",
+      "totalScore": 86,
+      "rank": "Tốt",
+      "status": "Đã công nhận chính thức",
+      "criteria": [
+        {
+          "name": "Ý thức và kết quả học tập, nghiên cứu khoa học",
+          "maxScore": 20,
+          "score": 18
+        },
+        {
+          "name": "Ý thức chấp hành nội quy, quy chế của Học viện",
+          "maxScore": 25,
+          "score": 23
+        },
+        {
+          "name": "Tham gia hoạt động chính trị, xã hội, văn hóa, thể thao",
+          "maxScore": 20,
+          "score": 17
+        },
+        {
+          "name": "Ý thức công dân và quan hệ cộng đồng",
+          "maxScore": 25,
+          "score": 20
+        },
+        {
+          "name": "Tham gia công tác cán bộ lớp, Đoàn - Hội và thành tích đặc biệt",
+          "maxScore": 10,
+          "score": 8
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "semester": "HK1 2025-2026",
+      "totalScore": 84,
+      "rank": "Tốt",
+      "status": "Đã công nhận chính thức",
+      "criteria": [
+        {
+          "name": "Ý thức và kết quả học tập, nghiên cứu khoa học",
+          "maxScore": 20,
+          "score": 17
+        },
+        {
+          "name": "Ý thức chấp hành nội quy, quy chế của Học viện",
+          "maxScore": 25,
+          "score": 22
+        },
+        {
+          "name": "Tham gia hoạt động chính trị, xã hội, văn hóa, thể thao",
+          "maxScore": 20,
+          "score": 17
+        },
+        {
+          "name": "Ý thức công dân và quan hệ cộng đồng",
+          "maxScore": 25,
+          "score": 20
+        },
+        {
+          "name": "Tham gia công tác cán bộ lớp, Đoàn - Hội và thành tích đặc biệt",
+          "maxScore": 10,
+          "score": 8
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "semester": "HK2 2024-2025",
+      "totalScore": 79,
+      "rank": "Khá",
+      "status": "Đã công nhận chính thức",
+      "criteria": [
+        {
+          "name": "Ý thức và kết quả học tập, nghiên cứu khoa học",
+          "maxScore": 20,
+          "score": 16
+        },
+        {
+          "name": "Ý thức chấp hành nội quy, quy chế của Học viện",
+          "maxScore": 25,
+          "score": 21
+        },
+        {
+          "name": "Tham gia hoạt động chính trị, xã hội, văn hóa, thể thao",
+          "maxScore": 20,
+          "score": 16
+        },
+        {
+          "name": "Ý thức công dân và quan hệ cộng đồng",
+          "maxScore": 25,
+          "score": 19
+        },
+        {
+          "name": "Tham gia công tác cán bộ lớp, Đoàn - Hội và thành tích đặc biệt",
+          "maxScore": 10,
+          "score": 7
+        }
+      ]
+    }
+  ],
+  "tuitions": [
+    {
+      "id": 1,
+      "semester": "HK1 2026-2027",
+      "totalAmount": 11900000,
+      "paidAmount": 11900000,
+      "status": "Đã hoàn thành",
+      "dueDate": "2026-10-30",
+      "items": [
+        {
+          "courseCode": "INT3120",
+          "courseName": "Phát triển ứng dụng di động (3 TC)",
+          "amount": 2100000
+        },
+        {
+          "courseCode": "INT3209",
+          "courseName": "Cơ sở dữ liệu (3 TC)",
+          "amount": 2100000
+        },
+        {
+          "courseCode": "INT3306",
+          "courseName": "Lập trình web (3 TC)",
+          "amount": 2100000
+        },
+        {
+          "courseCode": "INT3401",
+          "courseName": "Trí tuệ nhân tạo (3 TC)",
+          "amount": 2100000
+        },
+        {
+          "courseCode": "INT3105",
+          "courseName": "Kiến trúc máy tính (3 TC)",
+          "amount": 2100000
+        },
+        {
+          "courseCode": "INT3010",
+          "courseName": "Toán rời rạc (2 TC)",
+          "amount": 1400000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "semester": "HK2 2025-2026",
+      "totalAmount": 11200000,
+      "paidAmount": 11200000,
+      "status": "Đã hoàn thành",
+      "dueDate": "2026-03-25",
+      "items": [
+        {
+          "courseCode": "INT3301",
+          "courseName": "Mạng máy tính (3 TC)",
+          "amount": 2100000
+        },
+        {
+          "courseCode": "INT3202",
+          "courseName": "Công nghệ phần mềm (3 TC)",
+          "amount": 2100000
+        },
+        {
+          "courseCode": "INT2205",
+          "courseName": "Hệ điều hành (3 TC)",
+          "amount": 2100000
+        },
+        {
+          "courseCode": "MAT1093",
+          "courseName": "Xác suất thống kê (4 TC)",
+          "amount": 2800000
+        },
+        {
+          "courseCode": "FLF1107",
+          "courseName": "Tiếng Anh chuyên ngành (3 TC)",
+          "amount": 2100000
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "semester": "HK1 2025-2026",
+      "totalAmount": 10500000,
+      "paidAmount": 10500000,
+      "status": "Đã hoàn thành",
+      "dueDate": "2025-10-28",
+      "items": [
+        {
+          "courseCode": "INT2204",
+          "courseName": "Cấu trúc dữ liệu & Giải thuật (4 TC)",
+          "amount": 2800000
+        },
+        {
+          "courseCode": "INT2206",
+          "courseName": "Lập trình hướng đối tượng (3 TC)",
+          "amount": 2100000
+        },
+        {
+          "courseCode": "PHY1100",
+          "courseName": "Vật lý đại cương (4 TC)",
+          "amount": 2800000
+        },
+        {
+          "courseCode": "POL1001",
+          "courseName": "Triết học Mác - Lênin (4 TC)",
+          "amount": 2800000
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "semester": "HK2 2026-2027 (Dự kiến)",
+      "totalAmount": 9800000,
+      "paidAmount": 0,
+      "status": "Chưa đến kỳ thu",
+      "dueDate": "2027-03-15",
+      "items": [
+        {
+          "courseCode": "INT3501",
+          "courseName": "An toàn ứng dụng Web & Mobile (3 TC)",
+          "amount": 2100000
+        },
+        {
+          "courseCode": "INT3508",
+          "courseName": "Điện toán đám mây & DevOps (3 TC)",
+          "amount": 2100000
+        },
+        {
+          "courseCode": "INT3412",
+          "courseName": "Học sâu (Deep Learning) (4 TC)",
+          "amount": 2800000
+        },
+        {
+          "courseCode": "INT3999",
+          "courseName": "Thực tập chuyên ngành CNTT (4 TC)",
+          "amount": 2800000
+        }
+      ]
+    }
+  ],
+  "surveys": [
+    {
+      "id": 1,
+      "courseCode": "INT3120",
+      "courseName": "Phát triển ứng dụng di động",
+      "lecturer": "TS. Trần Minh",
+      "semester": "HK1 2026-2027",
+      "status": "completed",
+      "deadline": "2026-11-20",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "courseCode": "INT3209",
+      "courseName": "Cơ sở dữ liệu",
+      "lecturer": "ThS. Nguyễn Hà",
+      "semester": "HK1 2026-2027",
+      "status": "pending",
+      "deadline": "2026-11-20",
+      "rating": null
+    },
+    {
+      "id": 3,
+      "courseCode": "INT3306",
+      "courseName": "Lập trình web",
+      "lecturer": "TS. Lê Quang",
+      "semester": "HK1 2026-2027",
+      "status": "completed",
+      "deadline": "2026-11-20",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "courseCode": "INT3401",
+      "courseName": "Trí tuệ nhân tạo",
+      "lecturer": "TS. Vũ Hạnh",
+      "semester": "HK1 2026-2027",
+      "status": "pending",
+      "deadline": "2026-11-25",
+      "rating": null
+    },
+    {
+      "id": 5,
+      "courseCode": "INT3105",
+      "courseName": "Kiến trúc máy tính",
+      "lecturer": "ThS. Đặng Hùng",
+      "semester": "HK1 2026-2027",
+      "status": "completed",
+      "deadline": "2026-11-25",
+      "rating": 4.8
+    }
+  ],
+  "serviceRequests": [
+    {
+      "id": 1,
+      "title": "Cấp giấy xác nhận sinh viên (Vay vốn NHCSXH / Tạm hoãn nghĩa vụ)",
+      "category": "Hành chính - CTSV",
+      "processingTime": "01 - 02 ngày làm việc",
+      "fee": "Miễn phí",
+      "status": "Đã trả kết quả",
+      "requestDate": "2026-10-12",
+      "description": "Nhận bản giấy có dấu đỏ tại Ô số 2 - Bộ phận Một cửa (Tầng 1 nhà A1) hoặc tải bản ký số PDF trên S-Link."
+    },
+    {
+      "id": 2,
+      "title": "Cấp bảng điểm tích lũy tiếng Việt / tiếng Anh có xác nhận",
+      "category": "Đào tạo",
+      "processingTime": "02 ngày làm việc",
+      "fee": "20.000đ / bản",
+      "status": "Đang xử lý",
+      "requestDate": "2026-10-31",
+      "description": "Phục vụ hồ sơ xét học bổng doanh nghiệp và thực tập kỹ sư CNTT."
+    },
+    {
+      "id": 3,
+      "title": "Đăng ký cấp lại Thẻ sinh viên tích hợp ngân hàng",
+      "category": "Hành chính - CTSV",
+      "processingTime": "05 - 07 ngày làm việc",
+      "fee": "50.000đ / thẻ",
+      "status": "Đã tiếp nhận",
+      "requestDate": "2026-11-01",
+      "description": "Cấp lại thẻ cứng từ tính kết hợp kích hoạt mã QR định danh trên ứng dụng S-Link."
+    },
+    {
+      "id": 4,
+      "title": "Xác nhận hoàn thành chuẩn đầu ra Tiếng Anh quốc tế (TOEIC/IELTS)",
+      "category": "Khảo thí",
+      "processingTime": "03 ngày làm việc",
+      "fee": "Miễn phí",
+      "status": "Đã trả kết quả",
+      "requestDate": "2026-09-25",
+      "description": "Đối chiếu bản gốc chứng chỉ ngoại ngữ và cập nhật điều kiện miễn học phần tiếng Anh."
+    }
+  ]
+}
